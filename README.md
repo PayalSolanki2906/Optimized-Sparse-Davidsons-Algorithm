@@ -11,5 +11,4 @@ If a segmentation fault is shown (which may be due to stack memory issues), use 
 ```
 $ ifort myprogram.f90 sparse_davidson.f90 -mkl -heap-arrays
 ```
-
-For more details read the instruction_for_compilation.pdf
+Note that, myprogram reads the input from the file 'fort.124' (which contains the nonzero elements of the matrix) and stores the eigenvalues in output file 'fort.201'. For more details regarding paramters, read the instruction_for_compilation.pdf
